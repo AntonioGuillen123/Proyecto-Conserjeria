@@ -1,0 +1,10 @@
+CREATE DATABASE concierge;
+
+CREATE TABLE roomissued(id int PRIMARY KEY AUTO_INCREMENT, room varchar(25) not null, issue text not null, datetime datetime not null DEFAULT CURRENT_TIMESTAMP);
+
+INSERT INTO roomissued (room, issue) VALUES
+('Sala A', 'Fugas de agua en el techo'),
+('Sala B', 'Proyector no funciona'),
+('Sala C', 'Sillas rotas'),
+('Sala D', 'Falta de iluminación'),
+('Sala E', 'Problemas con el aire acondicionado');
