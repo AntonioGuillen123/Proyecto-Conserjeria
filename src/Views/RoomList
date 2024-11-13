@@ -1,0 +1,26 @@
+<?php
+    require_once("Components/layout.php");
+?>
+<body>
+    <?php
+        require_once("Components/header.php");
+    ?>
+
+    <main>
+        <div class="button">
+             <a class="reportIssue" href="?action=create"><button>report issue</button></a>
+        </div>
+
+         <?php
+             foreach ($data["room"] as $room){
+                 echo "{$room->dateTime}";
+                 echo "{$room->issue}";
+                 echo "{$room->id}";
+                 echo "{$room->room}";
+             }
+         ?>
+    </main>
+    <?php
+        require_once("Components/footer.php");
+    ?>
+</body>
