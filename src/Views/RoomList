@@ -8,7 +8,7 @@
 
     <main>
         <div class="button">
-             <a class="reportIssue" href="?action=create"><button>report issue</button></a>
+             <a class="reportIssue" href="?action=create"><button>report issue</button>⚠</a>
         </div>
 
          <?php
