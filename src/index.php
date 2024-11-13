@@ -2,6 +2,6 @@
 
 namespace App;
 
-use App\Controllers\CallController;
+use App\Controllers\RoomIssuedController
 
-$controller = new CallController;
+$controller = new RoomIssuedController;
