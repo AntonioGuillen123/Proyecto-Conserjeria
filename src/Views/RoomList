@@ -11,7 +11,7 @@
              <a class="reportIssue" href="?action=create"><button>Report issue</button>⚠</a>
         </div>
 
-        <table class="table">
+        <table class="table table-bordered table-hover">
             <thead>
                 <tr class="list">
                     <th class='info'>Id</th>
