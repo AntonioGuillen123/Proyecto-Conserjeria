@@ -8,8 +8,20 @@
 
     <main>
         <div class="button">
-             <a class="reportIssue" href="?action=create"><button>report issue</button>⚠</a>
+             <a class="reportIssue" href="?action=create"><button>Report issue</button>⚠</a>
         </div>
+
+        <table class="table">
+            <thead>
+                <tr class="list">
+                    <th class='info'>Id</th>
+                    <th class='info'>Date</th>
+                    <th class='info'>Room</th>
+                    <th class='info'>Issue</th>
+                    <th class='info'>Delete</th>
+                    <th class='info'>Update</th>
+                </tr>
+            </thead>
 
          <?php
              foreach ($data["room"] as $room){
@@ -20,6 +32,7 @@
              }
          ?>
     </main>
+
     <?php
         require_once("Components/footer.php");
     ?>
