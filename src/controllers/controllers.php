@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\Calls;
+use App\Models\Call;
 use App\Core\View;
 
 class CallController {
