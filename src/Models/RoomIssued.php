@@ -6,7 +6,6 @@ use App\Connection;
 
 class RoomIssued
 {
-
     public ?int $id;
     public string $room;
     public string $issue;
@@ -41,5 +40,14 @@ class RoomIssued
         }
 
         return $roomsIssued;
+    }
+
+    public function findById() {
+        $query = $this->connection->connection->query("SELECT * FROM {$this->table} WHERE id = {$this->id}");
+        $results = $query->fetchAll();
+
+        $roomIssued = $results[0];
+
+        return new RoomIssued($roomIssued['id'], $roomIssued['room'], $roomIssued['issue'], $roomIssued['datetime']);
     }
 }
