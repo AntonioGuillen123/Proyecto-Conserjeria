@@ -80,11 +80,13 @@ class RoomIssued
 
     public function destroy()
     {
-        $query = $this->connection->connection->query("DELETE FROM {$this->table} WHERE id = {$this->id}");
+        $this->connection->connection->query("DELETE FROM {$this->table} WHERE id = {$this->id}");
     }
 
     public function save()
     {
-        $query = $this->connection->connection->query("INSERT INTO {$this->table} (room, issue, area) VALUES ('{$this->room}', '{$this->issue}', '{$this->area}')");
+        $this->connection->connection->query("INSERT INTO {$this->table} (room, issue, area) VALUES ('{$this->room}', '{$this->issue}', '{$this->area}')");
     }
+
+   
 }
