@@ -26,15 +26,14 @@
 
             <tbody>
                 <?php
-                    foreach($data["room"] as $room){
-
+                    foreach($data["room"] as $room) {
                         echo "
                         <tr class='allBody'>
-                            <td class='infoBody'>{$room->getId()}</td>
-                            <td class='infoBody'>{$room->getDateTime()}</td>
-                            <td class='infoBody'>{$room->getRoom()}</td>
-                            <td class='infoBody'>{$room->getIssue()}</td>
-                            <td class='infoBody'>{$room->getArea()}</td>
+                            <td>{$room->getId()}</td>
+                            <td>{$room->getDateTime()}</td>
+                            <td>{$room->getRoom()}</td>
+                            <td>{$room->getIssue()}</td>
+                            <td>{$room->getArea()}</td>
                             <td class='infoBody'><a href='?action=delete&id={$room->getId()}'>❌</a></td>
                             <td class='infoBody'><a href='?action=update&id={$room->getId()}'>✏️</a></td>
                         </tr>
