@@ -50,4 +50,8 @@ class RoomIssued
 
         return new RoomIssued($roomIssued['id'], $roomIssued['room'], $roomIssued['issue'], $roomIssued['datetime']);
     }
+
+    public function destroy(){
+        $query = $this->connection->connection->query("DELETE FROM {$this->table} WHERE id = {$this->id}");
+    }
 }
