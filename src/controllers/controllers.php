@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-use App\Models\Call;
+use App\Models\RoomIssued;
 use App\Core\View;
 
-class CallController {
+class RoomIssuedController {
 
     public function __construct() {
         if(isset($_GET["action"]) && ($_GET["action"] == "delete")) {
@@ -27,14 +27,14 @@ class CallController {
     }
 
     public function index() {
-        $call = new Call;
-        $calls = $call->all();
+        $call = new RoomIssued;
+        $calls = $call->getAll();
 
         new View("callList", ["call" => $calls]);
     }
 
     public function delete($id) {
-        $callDelete = new Call;
+        $callDelete = new RoomIssued;
         $call = $callDelete->findById($id);
 
         $call->destroy();
@@ -46,7 +46,7 @@ class CallController {
     }
 
     public function store(array $request) {
-        $newCall = new Call(null, $request["room"], $request["issue"], $request["dateTime"]);
+        $newCall = new RoomIssued(null, $request["room"], $request["issue"], $request["dateTime"]);
         $newCall->save();
 
         $this->index();
