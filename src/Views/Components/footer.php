@@ -1,11 +1,6 @@
-<?php
-    require('./vendor/autoload.php');
-    require('./src/index.php');
-    ?>
-
-<footer id="contact">
-
-                <p class="copyright">  </p>
-            </div>
-
-        </footer>
+<footer>
+    <div class="container">
+        <p>© 2024 The Concierge Hotel.</p>
+        <p>We expect the unexpected.</p>
+    </div>
+</footer>
