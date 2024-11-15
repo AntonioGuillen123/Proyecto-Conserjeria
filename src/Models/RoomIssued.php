@@ -20,9 +20,17 @@ class RoomIssued
         return $this->id;
     }
 
+    public function setId($id){
+        $this->id = $id;
+    }
+
     public function getRoom()
     {
         return $this->room;
+    }
+
+    public function setRoom($room){
+        $this->room = $room;
     }
 
     public function getIssue()
@@ -30,14 +38,26 @@ class RoomIssued
         return $this->issue;
     }
 
+    public function setIssue($issue){
+        $this->issue = $issue;
+    }
+
     public function getArea()
     {
         return $this->area;
     }
 
+    public function setArea($area){
+        $this->area = $area;
+    }
+
     public function getDateTime()
     {
         return $this->datetime;
+    }
+
+    public function setDateTime($datetime){
+        $this->datetime = $datetime;
     }
 
     public function __construct($id = null, $room = '', $issue = '', $area = '', $datetime = null)
