@@ -6,13 +6,33 @@ use App\Connection;
 
 class RoomIssued
 {
-    public ?int $id;
-    public string $room;
-    public string $issue;
-    public ?string $datetime;
+    private ?int $id;
+    private string $room;
+    private string $issue;
+    private ?string $datetime;
 
-    public $connection;
-    public $table = 'roomissued';
+    private $connection;
+    private $table = 'roomissued';
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getRoom()
+    {
+        return $this->room;
+    }
+
+    public function getIssue()
+    {
+        return $this->issue;
+    }
+
+    public function getDateTime()
+    {
+        return $this->datetime;
+    }
 
     public function __construct($id = null, $room = '', $issue = '', $datetime = null)
     {
@@ -42,7 +62,8 @@ class RoomIssued
         return $roomsIssued;
     }
 
-    public function findById() {
+    public function findById()
+    {
         $query = $this->connection->connection->query("SELECT * FROM {$this->table} WHERE id = {$this->id}");
         $results = $query->fetchAll();
 
@@ -51,11 +72,13 @@ class RoomIssued
         return new RoomIssued($roomIssued['id'], $roomIssued['room'], $roomIssued['issue'], $roomIssued['datetime']);
     }
 
-    public function destroy(){
+    public function destroy()
+    {
         $query = $this->connection->connection->query("DELETE FROM {$this->table} WHERE id = {$this->id}");
     }
 
-    public function save(){
+    public function save()
+    {
         $query = $this->connection->connection->query("INSERT INTO {$this->table} (room, issue) VALUES ('{$this->room}', '{$this->issue}')");
     }
 }
