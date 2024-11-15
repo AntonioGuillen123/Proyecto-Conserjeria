@@ -60,7 +60,7 @@ class RoomIssued
         $roomsIssued = [];
 
         foreach ($results as $item) {
-            $roomIssued = new RoomIssued($item['id'], $item['room'], $item['issue'], $item['datetime']);
+            $roomIssued = new RoomIssued($item['id'], $item['room'], $item['issue'], $item['area'], $item['datetime']);
 
             array_push($roomsIssued, $roomIssued);
         }
@@ -68,14 +68,14 @@ class RoomIssued
         return $roomsIssued;
     }
 
-    public function findById()
+    public function findById($id)
     {
-        $query = $this->connection->connection->query("SELECT * FROM {$this->table} WHERE id = {$this->id}");
+        $query = $this->connection->connection->query("SELECT * FROM {$this->table} WHERE id = $id");
         $results = $query->fetchAll();
 
         $roomIssued = $results[0];
 
-        return new RoomIssued($roomIssued['id'], $roomIssued['room'], $roomIssued['issue'], $roomIssued['datetime']);
+        return new RoomIssued($roomIssued['id'], $roomIssued['room'], $roomIssued['issue'], $roomIssued['area'], $roomIssued['datetime']);
     }
 
     public function destroy()
@@ -85,6 +85,6 @@ class RoomIssued
 
     public function save()
     {
-        $query = $this->connection->connection->query("INSERT INTO {$this->table} (room, issue) VALUES ('{$this->room}', '{$this->issue}')");
+        $query = $this->connection->connection->query("INSERT INTO {$this->table} (room, issue, area) VALUES ('{$this->room}', '{$this->issue}', '{$this->area}')");
     }
 }
