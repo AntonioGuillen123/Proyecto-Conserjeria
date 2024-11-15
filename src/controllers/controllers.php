@@ -28,7 +28,7 @@ class CallController {
 
     public function index() {
         $call = new Call;
-        $calls = $call->all();
+        $calls = $call->getAll();
 
         new View("callList", ["call" => $calls]);
     }
