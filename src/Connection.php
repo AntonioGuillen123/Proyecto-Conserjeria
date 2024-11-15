@@ -23,7 +23,7 @@ class Connection
         $host = 'localhost';
         $username = 'root';
         $password = '';
-        $database = 'conciergedb';
+        $database = 'concierge';
         $charset = 'utf-8';
 
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
