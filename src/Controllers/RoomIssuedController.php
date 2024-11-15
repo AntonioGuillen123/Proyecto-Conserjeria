@@ -30,7 +30,7 @@ class RoomIssuedController {
         $call = new RoomIssued;
         $calls = $call->getAll();
 
-        new View("callList", ["call" => $calls]);
+        new View("RoomList", ["room" => $calls]);
     }
 
     public function delete($id) {
@@ -42,7 +42,7 @@ class RoomIssuedController {
     }
 
     public function create() {
-        new View("createCall");
+        new View("CreateRoom");
     }
 
     public function store(array $request) {
