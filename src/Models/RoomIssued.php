@@ -30,7 +30,8 @@ class RoomIssued
         return $this->issue;
     }
 
-    public function getArea(){
+    public function getArea()
+    {
         return $this->area;
     }
 
@@ -88,5 +89,8 @@ class RoomIssued
         $this->connection->connection->query("INSERT INTO {$this->table} (room, issue, area) VALUES ('{$this->room}', '{$this->issue}', '{$this->area}')");
     }
 
-   
+    public function update()
+    {
+        $this->connection->connection->query("UPDATE {$this->table} SET room = '{$this->room}', issue = '{$this->issue}', area = '{$this->area}' WHERE id = '{$this->id}'");
+    }
 }
