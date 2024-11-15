@@ -9,6 +9,7 @@ class RoomIssued
     private ?int $id;
     private string $room;
     private string $issue;
+    private string $area;
     private ?string $datetime;
 
     private $connection;
@@ -29,16 +30,21 @@ class RoomIssued
         return $this->issue;
     }
 
+    public function getArea(){
+        return $this->area;
+    }
+
     public function getDateTime()
     {
         return $this->datetime;
     }
 
-    public function __construct($id = null, $room = '', $issue = '', $datetime = null)
+    public function __construct($id = null, $room = '', $issue = '', $area = '', $datetime = null)
     {
         $this->id = $id;
         $this->room = $room;
         $this->issue = $issue;
+        $this->area = $area;
         $this->datetime = $datetime;
 
         if (!$this->connection) {
