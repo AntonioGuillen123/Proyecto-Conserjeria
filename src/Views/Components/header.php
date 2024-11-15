@@ -1,15 +1,10 @@
-<?php
-    require('./vendor/autoload.php');
-    require('./src/index.php');
-    ?>
 
 <header>
-
-<nav class="navbar">
-    <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
+    <div class="container">
+        <div class="headerContent">
+            <img class="logoHotel" src="./public/img/logoHotel.jpg" alt="logo">
+            <h1>Welcome to the Concierge Hotel management system</h1>
+            <h2>Report your issues here and we will solve them</h2>
+        </div>
+    </div>
 </header>
