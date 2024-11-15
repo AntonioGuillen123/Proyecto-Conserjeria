@@ -13,7 +13,7 @@
 
         <table class="table table-bordered table-hover">
             <thead>
-                <tr class="list">
+                <tr class='listHeader'>
                     <th class='infoHeader'>Id</th>
                     <th class='infoHeader'>Date</th>
                     <th class='infoHeader'>Room</th>
@@ -29,7 +29,7 @@
                     foreach($data["room"] as $room){
 
                         echo "
-                        <tr>
+                        <tr class='allBody'>
                             <td class='infoBody'>{$room->getId()}</td>
                             <td class='infoBody'>{$room->getDateTime()}</td>
                             <td class='infoBody'>{$room->getRoom()}</td>
