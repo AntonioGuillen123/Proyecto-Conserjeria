@@ -1,10 +1,17 @@
+DROP DATABASE IF EXIST concierge;
+
 CREATE DATABASE concierge;
 
-CREATE TABLE roomissued(id int PRIMARY KEY AUTO_INCREMENT, room varchar(25) not null, issue text not null, datetime datetime not null DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE roomissued(id int PRIMARY KEY AUTO_INCREMENT, room varchar(25) NOT NULL, issue text NOT NULL, area varchar(15) NOT NULL, datetime datetime NOT NULL DEFAULT CURRENT_TIMESTAMP);
 
-INSERT INTO roomissued (room, issue) VALUES
-('Sala A', 'Fugas de agua en el techo'),
-('Sala B', 'Proyector no funciona'),
-('Sala C', 'Sillas rotas'),
-('Sala D', 'Falta de iluminación'),
-('Sala E', 'Problemas con el aire acondicionado');
+INSERT INTO roomissued (room, issue, area) VALUES
+('101', 'Broken AC', 'Bedroom'),
+('202', 'Leaking faucet', 'Bathroom'),
+('303', 'Faulty lights', 'Living Room'),
+('404', 'Clogged drain', 'Bathroom'),
+('505', 'No hot water', 'Bathroom'),
+('606', 'TV not working', 'Bedroom'),
+('707', 'Window won’t close', 'Living Room'),
+('808', 'Broken bed frame', 'Bedroom'),
+('909', 'Internet connectivity issue', 'Living Room'),
+('1010', 'Stained carpet', 'Bedroom');
