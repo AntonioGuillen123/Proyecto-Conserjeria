@@ -1,6 +1,8 @@
-DROP DATABASE IF EXIST concierge;
+DROP DATABASE IF EXISTS mi_base_de_datos;
 
 CREATE DATABASE concierge;
+
+USE concierge;
 
 CREATE TABLE roomissued(id int PRIMARY KEY AUTO_INCREMENT, room varchar(25) NOT NULL, issue text NOT NULL, area varchar(15) NOT NULL, datetime datetime NOT NULL DEFAULT CURRENT_TIMESTAMP);
 
