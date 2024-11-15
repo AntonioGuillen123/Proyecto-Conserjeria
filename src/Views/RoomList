@@ -14,23 +14,35 @@
         <table class="table table-bordered table-hover">
             <thead>
                 <tr class="list">
-                    <th class='info'>Id</th>
-                    <th class='info'>Date</th>
-                    <th class='info'>Room</th>
-                    <th class='info'>Issue</th>
-                    <th class='info'>Delete</th>
-                    <th class='info'>Update</th>
+                    <th class='infoHeader'>Id</th>
+                    <th class='infoHeader'>Date</th>
+                    <th class='infoHeader'>Room</th>
+                    <th class='infoHeader'>Issue</th>
+                    <th class='infoHeader'>Area</th>
+                    <th class='infoHeader'>Delete</th>
+                    <th class='infoHeader'>Update</th>
                 </tr>
             </thead>
 
-         <?php
-             foreach ($data["room"] as $room){
-                 echo "{$room->dateTime}";
-                 echo "{$room->issue}";
-                 echo "{$room->id}";
-                 echo "{$room->room}";
-             }
-         ?>
+            <tbody class= "tableBody">
+                <?php
+                    foreach($data["room"] as $room){
+
+                        echo "
+                        <tr>
+                        <td class='infoBody'>{$room->getId()}</td>
+                        <td>{$room->getDateTime()}</td>
+                        <td class='infoBody'>{$room->getRoom()}</td>
+                        <td>{$room->getIssue()}</td>
+                        <td>{$room->getArea()}</td>
+                        <td class='infoBody'><a href='?action=delete&id={$room->getId()}'>❌</a></td>
+                        <td class='infoBody'><a href='?action=update&id={$room->getId()}'>✏️</a></td>
+                        </tr>
+                        ";
+                    }
+                ?>
+            </tbody>
+        </table>
     </main>
 
     <?php
