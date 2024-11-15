@@ -8,7 +8,7 @@
 
     <main>
         <div class="button">
-            <a class="reportIssue" href="?action=create"><button>Report issue</button>⚠</a>
+            <a class="reportIssue" href="?action=create"><button>Report issue</button></a>
         </div>
 
         <table class="table table-bordered table-hover">

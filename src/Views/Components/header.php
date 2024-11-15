@@ -1,10 +1,10 @@
 
 <header>
-    <div class="container">
-        <div class="headerContent">
-            <img class="logoHotel" src="./public/img/logoHotel.jpg" alt="logo">
-            <h1>Welcome to the Concierge Hotel management system.</h1>
-            <h2>Report your issues here and we will solve them.</h2>
+    <div class="headerContent">
+        <img class="logoHotel" src="./public/img/logoHeader.jpg" alt="logo">
+        <div class="textHeader">
+            <p>Welcome to the Concierge Hotel management system.</p>
+            <p> We expect the unexpected.</p>
         </div>
     </div>
 </header>

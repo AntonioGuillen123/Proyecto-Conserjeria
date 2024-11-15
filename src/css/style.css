@@ -1,0 +1,44 @@
+@import url(footer.css);
+@import url(header.css);
+
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+
+.table{
+    justify-content: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.reportIssue{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 170px;
+    height: 35px;
+}
+
+td, th{
+    color: rgb(202, 192, 192);
+    width: 13em;
+    height: 2em;
+    text-align: center;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+th{
+  background-color: rgb(34, 34, 34);
+}
+
+td{
+  background-color: rgb(132, 52, 52);
+}
+
+a{
+    text-decoration: none;
+}
