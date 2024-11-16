@@ -73,6 +73,13 @@ class RoomIssued
         }
     }
 
+    public function rename($roomUpdate, $issueUpdate, $areaUpdate, $dateTimeUpdate){
+        $this->setRoom($roomUpdate);
+        $this->setIssue($issueUpdate);
+        $this->setArea($areaUpdate);
+        $this->setdateTime($dateTimeUpdate);
+    }
+
     public function getAll()
     {
         $query = $this->connection->connection->query("SELECT * FROM {$this->table}");
