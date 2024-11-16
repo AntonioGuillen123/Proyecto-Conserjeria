@@ -2,7 +2,7 @@
 
 Generar un registro de llamadas sobre las averias a la consejeria de un hotel.
 ***
-
+![Screenshot_2024-11-15_220053](https://github.com/user-attachments/assets/ae5dfdd4-af75-4488-8471-48376ca9029d)
 ***
 * Talena Barbosa:https://github.com/talenaa
 * Antonio Guillén:https://github.com/AntonioGuillen123
