@@ -72,7 +72,7 @@ class RoomIssuedController {
     public function update(array $request, $id) {
         $callUpdate = new RoomIssued;
         $call = $callUpdate->findById($id);
-        $call->rename($request["room"], $request["issue"]);
+        $call->rename($request["room"], $request["issue"], $request["area"], $request["datetime"]);
         $call->update();
 
         $this->index();
