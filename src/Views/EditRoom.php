@@ -11,7 +11,7 @@ require_once("Components/layout.php");
 
         <div class="flex items-center justify-center p-12">
             <div class="mx-auto w-full max-w-[550px] bg-white">
-                <form action="?action=update" method="post">
+                <form action="?action=update&id=<?php echo $data['room']->getId() ?>" method="post">
                     <div class="mb-5">
                         <label for="room" class="mb-3 block text-base font-medium text-[#07074D]">
                             Room Issue
@@ -30,13 +30,13 @@ require_once("Components/layout.php");
                         <label for="issue" class="mb-3 block text-base font-medium text-[#07074D]">
                             Issue Description
                         </label>
-                        <textarea id="issue" name="issue" rows="4" value="<?php echo $data['room']->getIssue() ?>" required class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Issue Description"></textarea>
+                        <textarea id="issue" name="issue" rows="4" required class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Issue Description"><?php echo $data['room']->getIssue() ?></textarea>
                     </div>
 
                     <div class="mb-5">
                         <label for="dateTime" class="mb-3 block text-base font-medium text-[#07074D]">
                             Date of Issue
-                        </label> 
+                        </label>
                         <input type="datetime-local" name="dateTime" id="dateTime" required value="<?php echo $data['room']->getDateTime() ?>"
                             class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
@@ -57,7 +57,7 @@ require_once("Components/layout.php");
     </main>
 
     <?php
-      require_once("Components/footer.php");
+    require_once("Components/footer.php");
     ?>
 </body>
 
