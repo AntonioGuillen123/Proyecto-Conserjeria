@@ -1,8 +1,12 @@
-footer {
+footer{
     background-color: rgb(14, 14, 14);
     color: white;
     padding: 0px;
     margin: 0px;
     text-align: center;
     font-size: 15px;
+}
+
+.gitIcons{
+    max-width: 40px;
 }
