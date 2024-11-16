@@ -11,7 +11,7 @@ require_once("Components/layout.php");
 
         <div class="flex items-center justify-center p-12">
             <div class="mx-auto w-full max-w-[550px] bg-white">
-                <form action="?action=store" method="post">
+                <form action="?action=update" method="post">
                     <div class="mb-5">
                         <label for="room" class="mb-3 block text-base font-medium text-[#07074D]">
                             Room Issue
