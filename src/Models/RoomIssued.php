@@ -20,9 +20,17 @@ class RoomIssued
         return $this->id;
     }
 
+    public function setId($id){
+        $this->id = $id;
+    }
+
     public function getRoom()
     {
         return $this->room;
+    }
+
+    public function setRoom($room){
+        $this->room = $room;
     }
 
     public function getIssue()
@@ -30,13 +38,26 @@ class RoomIssued
         return $this->issue;
     }
 
-    public function getArea(){
+    public function setIssue($issue){
+        $this->issue = $issue;
+    }
+
+    public function getArea()
+    {
         return $this->area;
+    }
+
+    public function setArea($area){
+        $this->area = $area;
     }
 
     public function getDateTime()
     {
         return $this->datetime;
+    }
+
+    public function setDateTime($datetime){
+        $this->datetime = $datetime;
     }
 
     public function __construct($id = null, $room = '', $issue = '', $area = '', $datetime = null)
@@ -50,6 +71,13 @@ class RoomIssued
         if (!$this->connection) {
             $this->connection = new Connection();
         }
+    }
+
+    public function rename($roomUpdate, $issueUpdate, $areaUpdate, $dateTimeUpdate){
+        $this->setRoom($roomUpdate);
+        $this->setIssue($issueUpdate);
+        $this->setArea($areaUpdate);
+        $this->setdateTime($dateTimeUpdate);
     }
 
     public function getAll()
@@ -80,11 +108,16 @@ class RoomIssued
 
     public function destroy()
     {
-        $query = $this->connection->connection->query("DELETE FROM {$this->table} WHERE id = {$this->id}");
+        $this->connection->connection->query("DELETE FROM {$this->table} WHERE id = {$this->id}");
     }
 
     public function save()
     {
-        $query = $this->connection->connection->query("INSERT INTO {$this->table} (room, issue, area) VALUES ('{$this->room}', '{$this->issue}', '{$this->area}')");
+        $this->connection->connection->query("INSERT INTO {$this->table} (room, issue, area) VALUES ('{$this->room}', '{$this->issue}', '{$this->area}')");
+    }
+
+    public function update()
+    {
+        $this->connection->connection->query("UPDATE {$this->table} SET room = '{$this->room}', issue = '{$this->issue}', area = '{$this->area}' WHERE id = '{$this->id}'");
     }
 }
