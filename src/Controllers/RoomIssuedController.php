@@ -23,6 +23,17 @@ class RoomIssuedController {
             return;
         }
 
+        if(isset($_GET["action"]) && ($_GET["action"] == "edit")) {
+            $this->edit($_GET["id"]);
+            return;
+        }
+
+        if(isset($_GET["action"]) && ($_GET["action"] == "update")) {
+            $this->update($_POST,$_GET["id"]);
+            return;
+        }
+
+
         $this->index();
     }
 
@@ -48,6 +59,21 @@ class RoomIssuedController {
     public function store(array $request) {
         $newCall = new RoomIssued(null, $request["room"], $request["issue"], $request["dateTime"]);
         $newCall->save();
+
+        $this->index();
+    }
+
+    public function edit($id) {
+        $callEdit = new RoomIssued;
+        $call = $callEdit->findById($id);
+        new View("EditRoom", ["room" => $call]);
+    }
+
+    public function update(array $request, $id) {
+        $callUpdate = new RoomIssued;
+        $call = $callUpdate->findById($id);
+        $call->rename($request["room"], $request["issue"]);
+        $call->update();
 
         $this->index();
     }
