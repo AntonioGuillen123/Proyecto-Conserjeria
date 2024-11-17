@@ -77,10 +77,14 @@ composer install
 ***
 
 # Tests
-Se pueden hacer 5 tests, 1 para comprobar si todos están bien, 2 para comprobar los getters y otros 2 para los setters (Del room y del issue nada más).
-Se utiliza este comando para ejecutarlos(se tiene que estar en la raiz del proyecto para que funcione):
+
+* You can do 5 tests, 1 to check if all of them are correct, 2 to check the getters and another 2 for the setters (Only the room and the issue).
+* The command right below is used to execute them (you have to be at the root of the project for it to work):
+
 ```bash
 ./vendor/bin/phpunit tests
 ```
 ***
+The tests were successful.
+
 ![imagen_2024-11-17_165345281](https://github.com/user-attachments/assets/10966e68-be7a-4fe0-be23-c343f5a6d2ec)
