@@ -30,3 +30,12 @@ composer install
 ```
 Después, activa un servidor.
 (Nosotros en este caso usamos Xampp).
+***
+# Tests
+Se pueden hacer 5 tests, 1 para comprobar si todos están bien, 2 para comprobar los getters y otros 2 para los setters (Del room y del issue nada más).
+Se utiliza este comando para ejecutarlos(se tiene que estar en la raiz del proyecto para que funcione):
+```bash
+./vendor/bin/phpunit tests
+```
+***
+![imagen_2024-11-17_165345281](https://github.com/user-attachments/assets/10966e68-be7a-4fe0-be23-c343f5a6d2ec)
