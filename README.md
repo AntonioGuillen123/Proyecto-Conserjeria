@@ -98,3 +98,10 @@ The tests were successful.
 <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='tailwind css' src='https://img.shields.io/badge/tailwind-100000?style=for-the-badge&logo=tailwind css&logoColor=white&labelColor=00EEFF&color=00EEFF'/></a>
 <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='git' src='https://img.shields.io/badge/git-100000?style=for-the-badge&logo=git&logoColor=white&labelColor=FF0000&color=FF0000'/></a>
 <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='github' src='https://img.shields.io/badge/github-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000&color=000000'/></a>
+
+## Our team
+
+* Talena Barbosa: https://github.com/talenaa
+* Antonio Guillén: https://github.com/AntonioGuillen123
+* Jaz: https://github.com/Jaz356
+* Matías Stadler: https://github.com/Matias-Stadler
