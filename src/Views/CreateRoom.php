@@ -8,6 +8,7 @@ require_once("Components/layout.php");
     ?>
 
     <main>
+    <script src="https://cdn.tailwindcss.com"></script>
 
         <div class="flex items-center justify-center p-12">
             <div class="mx-auto w-full max-w-[550px] bg-white">
