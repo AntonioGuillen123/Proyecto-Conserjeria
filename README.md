@@ -8,7 +8,7 @@
 
 The objective of this project is to create a system that manages and control reports in a hotel.
 
-For this to happen we created a CRUD using PHP, HTML, SQL and CSS
+For this to happen we created a CRUD using PHP, HTML, SQL and CSS.
 
 We also have to make the page responsive using flex.
 
@@ -16,7 +16,7 @@ We also have to make the page responsive using flex.
 
 ## Overview:
 
-Take a look at how our project turned out
+Take a look at how our project turned out.
 ***
 
 ## <p align="center">Report page:</p>
@@ -28,33 +28,54 @@ Take a look at how our project turned out
 
 ![Screenshot 2024-11-17 193116](https://github.com/user-attachments/assets/59a6adff-eb11-4534-a261-0a6ae4a68b6c)
 ***
-* Talena Barbosa:https://github.com/talenaa
-* Antonio Guillén:https://github.com/AntonioGuillen123
-* Jaz:https://github.com/Jaz356
-* Rodrigo Lastra:https://github.com/rodrigoo1604
-* Matías Stadler:https://github.com/Matias-Stadler
-***
-# Instalación
-Clona el repositorio
+
+
+## Installation
+
+>[!CAUTION]
+>You'll need to have Xampp or another server that supports PHP and MYSQL. So before you start to read how to install it, search for a local server that supports PHP and MYSQL.
+
+* Clone this repository:
 ```bash
 https://github.com/AntonioGuillen123/Proyecto-Conserjeria.git
 ```
-Instalar Composer
+* Put the project folder in the xampp folder called "htdocs".
+
+* Install Composer
 ```bash
 https://getcomposer.org/
 ```
-para comprobar si se instalo correctamente, en la terminal introduce:
+
+* To check if it was installed correctly, in the terminal enter:
 ```bash
 composer --version
 ```
-si devuelve una version, esta todo correcto.
-En la terminal del editor de codigo introduce:
+
+* If it returns a version, everything is correct.
+
+  
+* In the VSC terminal enter:
 ```bash
 composer install
 ```
-Después, activa un servidor.
-(Nosotros en este caso usamos Xampp).
+
+* After that it should appear a folder named "vendor".
+
+* Now you have to create a file named ".gitignore". 
+
+* In the .gitignore file put "vendor/" (this will make the terminal ignore the vendor folder when you do a git push.).
+
+* Now open phpMyAdmin
+
+* Create a database named "Proyecto-Conserjeria"
+
+* Now you should find a file named "Proyecto-Conserjeria.sql", when you find the folder, import the database.
+
+*  Now open Xampp (or the server you installed), now start the Apache and the MySQL.
+
+*  You're good to go, just access the incidents management system in your browse.
 ***
+
 # Tests
 Se pueden hacer 5 tests, 1 para comprobar si todos están bien, 2 para comprobar los getters y otros 2 para los setters (Del room y del issue nada más).
 Se utiliza este comando para ejecutarlos(se tiene que estar en la raiz del proyecto para que funcione):
