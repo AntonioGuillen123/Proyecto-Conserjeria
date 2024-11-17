@@ -1,4 +1,4 @@
-# PHP Consejeria 
+# PHP Consejeria
 
 Generar un registro de llamadas sobre las averias a la consejeria de un hotel.
 ***
@@ -11,7 +11,7 @@ Generar un registro de llamadas sobre las averias a la consejeria de un hotel.
 * Matías Stadler:https://github.com/Matias-Stadler
 ***
 # Instalación
-Clona el repositorio  
+Clona el repositorio
 ```bash
 https://github.com/AntonioGuillen123/Proyecto-Conserjeria.git
 ```
