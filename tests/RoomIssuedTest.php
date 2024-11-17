@@ -36,4 +36,18 @@ class RoomIssuedTest extends TestCase
         // then - Crítica de la película
         $this->assertEquals('Issue test 1', $resultGetIssue);
     }
+
+    public function test_ifSetRoomWorkCorrectly()
+    {
+        // given - Actores de la película
+        $roomIssued = new RoomIssued(null, 'Room test 1', 'Issue test 1', 'Area test 1', null);
+        $newRoomData = 'Room test change';
+
+        // when - Rodaje de la película
+        $roomIssued->setRoom($newRoomData);
+        $roomChanged = $roomIssued->getRoom();
+
+        // then - Crítica de la película
+        $this->assertEquals('Room test change', $roomChanged);
+    }
 }
