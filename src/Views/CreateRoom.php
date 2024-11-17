@@ -62,5 +62,3 @@ require_once("Components/layout.php");
       require_once("Components/footer.php");
     ?>
 </body>
-
-</html>

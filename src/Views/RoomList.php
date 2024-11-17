@@ -8,7 +8,7 @@
 
     <main>
         <div class="button">
-            <a class="reportIssue" href="?action=create"><button>Report issue</button>⚠</a>
+            <a class="reportIssue" href="?action=create"><button>Report Issue</button></a>
         </div>
 
         <table class="table table-bordered table-hover">
@@ -35,7 +35,7 @@
                             <td>{$room->getIssue()}</td>
                             <td>{$room->getArea()}</td>
                             <td class='infoBody'><a href='?action=delete&id={$room->getId()}'>❌</a></td>
-                            <td class='infoBody'><a href='?action=update&id={$room->getId()}'>✏️</a></td>
+                            <td class='infoBody'><a href='?action=edit&id={$room->getId()}'>✏️</a></td>
                         </tr>
                         ";
                     }

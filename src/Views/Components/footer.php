@@ -1,6 +1,6 @@
 <footer>
     <div class="container">
-        <p>© 2024 The Concierge Hotel.</p>
-        <p>We expect the unexpected.</p>
+        <p>© Hotel Concierge.</p>
+        <p> All rights reserved.</p>
     </div>
 </footer>
