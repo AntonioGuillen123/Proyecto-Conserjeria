@@ -2,34 +2,40 @@
 @import url(header.css);
 
 body{
-  display: flex;
-  flex-flow: column;
-  padding: 0px;
-  margin: 0px;
+    display: flex;
+    flex-flow: column;
+    padding: 0px;
+    margin: 0px;
 }
 
 .table{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .reportIssue{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     width: 170px;
     height: 35px;
+    margin-top: 7px;
+}
+
+.reportIssue button{
+    background-color: rgb(44, 44, 44);
+    font-size: 17px;
+    color: rgb(188, 71, 71);
 }
 
 td, th{
-    color: rgb(203, 203, 203);
+    color: rgb(217, 217, 217);
     width: 13em;
     height: 2em;
     text-align: center;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 th{
@@ -41,5 +47,5 @@ td{
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
