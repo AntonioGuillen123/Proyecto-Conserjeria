@@ -13,7 +13,8 @@ class RoomIssuedTest extends TestCase
         $this->assertEquals(1, 1);
     }
 
-    public function test_ifGetRoomWorkCorrectly(){
+    public function test_ifGetRoomWorkCorrectly()
+    {
         // given - Actores de la película
         $roomIssued = new RoomIssued(null, 'Room test 1', 'Issue test 1', 'Area test 1', null);
 
@@ -22,5 +23,17 @@ class RoomIssuedTest extends TestCase
 
         // then - Crítica de la película
         $this->assertEquals('Room test 1', $resultGetRoom);
+    }
+
+    public function test_ifGetIssueWorkCorrectly()
+    {
+        // given - Actores de la película
+        $roomIssued = new RoomIssued(null, 'Room test 1', 'Issue test 1', 'Area test 1', null);
+
+        // when - Rodaje de la película
+        $resultGetIssue = $roomIssued->getIssue();
+
+        // then - Crítica de la película
+        $this->assertEquals('Issue test 1', $resultGetIssue);
     }
 }
