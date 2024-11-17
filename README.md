@@ -1,7 +1,21 @@
-# PHP Consejeria
+# PHP Concierge project
 
-Generar un registro de llamadas sobre las averias a la consejeria de un hotel.
+>[!IMPORTANT]
+>To learn how to install and also to know how we did this project, it's very important that you read every part of this readme. Thank you for your patience and have a good read.
+
+
+## What is this project about?
+
+The objective of this project is to create a system that manages and control reports in a hotel.
+
+For this to happen we created a CRUD using PHP, HTML, SQL and CSS
+
+We also have to make the page responsive using flex.
+
 ***
+
+## Overview
+
 ![Screenshot_2024-11-15_220053](https://github.com/user-attachments/assets/ae5dfdd4-af75-4488-8471-48376ca9029d)
 ***
 * Talena Barbosa:https://github.com/talenaa
