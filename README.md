@@ -2,7 +2,7 @@
 
 >[!IMPORTANT]
 >To learn how to install and also to know how we did this project, it's very important that you read every part of this readme. Thank you for your patience and have a good read.
-
+***
 
 ## What is this project about?
 
@@ -14,9 +14,19 @@ We also have to make the page responsive using flex.
 
 ***
 
-## Overview
+## Overview:
 
-![Screenshot_2024-11-15_220053](https://github.com/user-attachments/assets/ae5dfdd4-af75-4488-8471-48376ca9029d)
+Take a look at how our project turned out
+***
+
+## <p align="center">Report page:</p>
+
+![Screenshot 2024-11-17 193056](https://github.com/user-attachments/assets/6c39e480-6f31-4f55-bb0f-677d9f125df0)
+***
+
+## <p align="center">Report an issue page:</p>
+
+![Screenshot 2024-11-17 193116](https://github.com/user-attachments/assets/59a6adff-eb11-4534-a261-0a6ae4a68b6c)
 ***
 * Talena Barbosa:https://github.com/talenaa
 * Antonio Guillén:https://github.com/AntonioGuillen123
