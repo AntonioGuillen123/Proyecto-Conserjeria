@@ -88,6 +88,7 @@ composer install
 The tests were successful.
 
 ![imagen_2024-11-17_165345281](https://github.com/user-attachments/assets/10966e68-be7a-4fe0-be23-c343f5a6d2ec)
+***
 
 ## Tools we used in this project
 
@@ -98,6 +99,7 @@ The tests were successful.
 <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='tailwind css' src='https://img.shields.io/badge/tailwind-100000?style=for-the-badge&logo=tailwind css&logoColor=white&labelColor=00EEFF&color=00EEFF'/></a>
 <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='git' src='https://img.shields.io/badge/git-100000?style=for-the-badge&logo=git&logoColor=white&labelColor=FF0000&color=FF0000'/></a>
 <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='github' src='https://img.shields.io/badge/github-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000&color=000000'/></a>
+***
 
 ## Our team
 
@@ -105,3 +107,10 @@ The tests were successful.
 * Antonio Guillén: https://github.com/AntonioGuillen123
 * Jaz: https://github.com/Jaz356
 * Matías Stadler: https://github.com/Matias-Stadler
+
+## Thanks for reading!
+
+Thanks for reading this readme!
+
+Have a good day! :3
+***
