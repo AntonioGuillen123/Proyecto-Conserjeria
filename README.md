@@ -21,7 +21,7 @@ Take a look at how our project turned out.
 
 ## <p align="center">Report page:</p>
 
-![Screenshot 2024-11-17 193056](https://github.com/user-attachments/assets/6c39e480-6f31-4f55-bb0f-677d9f125df0)
+<img src="https://github.com/user-attachments/assets/6c39e480-6f31-4f55-bb0f-677d9f125df0" alt="Report page" width="400">
 ***
 
 ## <p align="center">Report an issue page:</p>
