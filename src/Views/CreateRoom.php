@@ -11,6 +11,7 @@ require_once("Components/layout.php");
 
         <div class="flex items-center justify-center p-12">
             <div class="mx-auto w-full max-w-[550px] bg-white">
+                <div class="mb-4 block text-center font-bold text-2xl text-[#07074D]">Create Report</div>
                 <form action="?action=store" method="post">
                     <div class="mb-5">
                         <label for="room" class="mb-3 block text-base font-medium text-[#07074D]">
