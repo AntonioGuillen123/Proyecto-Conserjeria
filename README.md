@@ -69,7 +69,7 @@ composer install
 
 * Create a database named "Proyecto-Conserjeria"
 
-* Now you should find a file named "Proyecto-Conserjeria.sql", when you find the folder, import the database.
+* Now you should find a file named "Proyecto-Conserjeria.sql", when you find the file, import the database.
 
 *  Now open Xampp (or the server you installed), now start the Apache and the MySQL.
 
