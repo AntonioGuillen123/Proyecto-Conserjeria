@@ -73,7 +73,7 @@ composer install
 
 *  Now open Xampp (or the server you installed), now start the Apache and the MySQL.
 
-*  You're good to go, just access the incidents management system in your browse.
+*  You're good to go, now just access the incidents management system in your browse.
 ***
 
 # Tests
@@ -107,6 +107,8 @@ The tests were successful.
 * Antonio Guillén: https://github.com/AntonioGuillen123
 * Jaz: https://github.com/Jaz356
 * Matías Stadler: https://github.com/Matias-Stadler
+* Rodrigo Lastra: https://github.com/rodrigoo1604
+***
 
 ## Thanks for reading!
 
